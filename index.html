@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2026 MinYoung Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -25,10 +26,10 @@
             <li><a href="#certifications">Certifications</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#illustration">Illustration</a></li>
-            <li><a href="#pro2">Project01</a></li>
-            <li><a href="#pro3">Project02</a></li>
-            <li><a href="#pro4">Project03</a></li>
-            <li><a href="#pro5">Team Project</a></li>
+            <li><a href="#pro2">Project 01</a></li>
+            <li><a href="#pro3">02</a></li>
+            <li><a href="#pro4">03</a></li>
+            <li><a href="#pro5">TP</a></li>
             <li><a href="#about">CONTACT</a></li>
           </ul>
         </nav>
@@ -256,7 +257,7 @@
             </li>
             <li>
               <span class="contact-icon" aria-hidden="true">🔗</span>
-              <span>portfolio202605.com</span>
+              <span>https://minyoung7601-stack.github.io/portfolio_2026/</span>
             </li>
           </ul>
         </div>
@@ -490,19 +491,70 @@
       <!-- Team Project -->
       <section id="pro5" class="con project-section alt">
         <div class="project-inner wide">
-          <h2 class="section-title">Team Project</h2>
+          <h2 class="section-title">Team & Personal Project</h2>
           <div class="team-grid">
             <figure>
-              <img src="img/team1.png" alt="팀 프로젝트 1" />
-              <figcaption>팀 프로젝트 01</figcaption>
+              <a
+                href="https://turo01315.dothome.co.kr/main/"
+                target="_blank"
+                style="display: block; text-decoration: none; color: inherit"
+              >
+                <div class="box">
+                  <img src="img/screen.png" alt="목업 프레임" />
+                  <div
+                    class="folio"
+                    style="
+                      background-image: url(&quot;img/mockup_tp_main.png&quot;);
+                    "
+                  ></div>
+                </div>
+
+                <figcaption style="margin-top: 10px">
+                  Team Project 01 (view website)
+                </figcaption>
+              </a>
             </figure>
+
             <figure>
-              <img src="img/team2.png" alt="팀 프로젝트 2" />
-              <figcaption>팀 프로젝트 02</figcaption>
+              <a
+                href="https://minyoung7601-stack.github.io/wedding/"
+                target="_blank"
+                style="display: block; text-decoration: none; color: inherit"
+              >
+                <div class="box">
+                  <img src="img/screen.png" alt="목업 프레임" />
+                  <div
+                    class="folio"
+                    style="
+                      background-image: url(&quot;img/mockup_tp_wedding.png&quot;);
+                    "
+                  ></div>
+                </div>
+
+                <figcaption>Team Project 2 (view website)</figcaption>
+              </a>
             </figure>
+
             <figure>
-              <img src="img/team3.png" alt="팀 프로젝트 3" />
-              <figcaption>팀 프로젝트 03</figcaption>
+              <a
+                href="https://minyoung7601-stack.github.io/social/"
+                target="_blank"
+                style="display: block; text-decoration: none; color: inherit"
+              >
+                <div class="box">
+                  <img src="img/screen.png" alt="목업 프레임" />
+                  <div
+                    class="folio"
+                    style="
+                      background-image: url(&quot;img/mockup_social.png&quot;);
+                    "
+                  ></div>
+                </div>
+
+                <figcaption>
+                  Personal Project - social AI (클릭 시 이동)
+                </figcaption>
+              </a>
             </figure>
           </div>
         </div>
@@ -513,4 +565,23 @@
       </footer>
     </div>
   </body>
+  <script>
+    $(window).on("scroll", function () {
+      let scrollTop = $(window).scrollTop();
+
+      // 팀 프로젝트 섹션(#pro5)의 위치를 잡습니다.
+      if ($("#pro5").length > 0) {
+        let pro5Top = $("#pro5").offset().top;
+
+        // 사용자의 화면 절반쯤에 팀 프로젝트 영역이 보이기 시작할 때 작동하도록 계산
+        let triggerPoint = pro5Top - $(window).height() + 100;
+
+        if (scrollTop >= triggerPoint) {
+          $(".box .folio").addClass("active");
+        } else {
+          $(".box .folio").removeClass("active");
+        }
+      }
+    });
+  </script>
 </html>

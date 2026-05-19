@@ -1278,3 +1278,38 @@ header nav a:hover::after {
     max-height: 360px;
   }
 }
+/* 목업 */
+.box {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.box img {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 2; /* 모니터 틀이 무조건 위로 오게 */
+  pointer-events: none;
+}
+
+.box .folio {
+  /* 아이맥/일반 모니터 프레임의 실제 액정 화면 비율 크기 세팅 */
+  width: 100%;
+  height: 72.5%; /* 모니터의 하단 베젤과 받침대를 제외한 순수 화면 높이 비율 */
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0; /* 상단 맞춤 */
+  z-index: 1; /* 모니터 틀 뒤로 배치 */
+  transition: 5s ease-in-out; /* 10초는 너무 느릴 수 있으니 5초 정도로 체감 조절 */
+}
+
+/* active 클래스가 붙었을 때 배경 이미지가 하단으로 이동 */
+.box .folio.active {
+  background-position: center bottom;
+}
