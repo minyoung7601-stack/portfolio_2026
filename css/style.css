@@ -1306,7 +1306,7 @@ header nav a:hover::after {
   left: 0;
   top: 0; /* 상단 맞춤 */
   z-index: 1; /* 모니터 틀 뒤로 배치 */
-  transition: 5s ease-in-out; /* 10초는 너무 느릴 수 있으니 5초 정도로 체감 조절 */
+  transition: 5s ease-in-out;
 }
 
 /* active 클래스가 붙었을 때 배경 이미지가 하단으로 이동 */
