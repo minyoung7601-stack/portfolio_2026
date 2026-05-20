@@ -165,9 +165,9 @@ header nav a:hover::after {
   position: relative;
   z-index: 1;
   width: min(1000px, 100%);
-  background: rgba(255, 255, 255, 0.96);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow);
+  /* background: rgba(255, 255, 255, 0.96); */
+  /* border-radius: var(--radius-lg); */
+  /* box-shadow: var(--shadow); */
   padding: clamp(32px, 5vw, 56px) clamp(24px, 4vw, 48px);
   text-align: center;
   animation: card-rise 0.9s ease both;
@@ -187,7 +187,7 @@ header nav a:hover::after {
 .landing-card h2 {
   font-size: clamp(28px, 5vw, 52px);
   font-weight: 800;
-  color: orange;
+  color: #ff5f5d;
   margin-bottom: 16px;
   line-height: 1.25;
 }
@@ -617,7 +617,7 @@ header nav a:hover::after {
 
 .cert-section .flip-card {
   display: block;
-  height: 240px;
+  height: 300px;
   perspective: 1000px;
   cursor: pointer;
 }
@@ -1231,6 +1231,10 @@ header nav a:hover::after {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .cert-section .flip-card {
+    cursor: pointer;
+  }
+
   .edu-columns {
     grid-template-columns: 1fr;
   }
@@ -1331,4 +1335,71 @@ header nav a:hover::after {
 /* active 클래스가 붙었을 때 배경 이미지가 하단으로 이동 */
 .box .folio.active {
   background-position: center bottom;
+}
+
+/* ── Contact ── */
+.business_card {
+  background: linear-gradient(135deg, var(--cream) 0%, var(--cream-end) 100%);
+  padding: calc(var(--header-h) + 48px) 5% 64px;
+  color: var(--ink);
+}
+
+.contact-inner {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.business_card-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 좌우 50%씩 똑같이 분할 */
+  gap: clamp(24px, 4vw, 48px);
+  align-items: center;
+  animation: fade-in 0.8s ease both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.business_card-photo {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  aspect-ratio: 1.6 / 1;
+  background: #e2e8f0;
+}
+
+.business_card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.business_card-photo:hover img {
+  transform: scale(1.04);
+}
+
+.business_card-label {
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.business_card-title {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.2;
 }
