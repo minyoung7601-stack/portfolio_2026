@@ -634,7 +634,7 @@ header nav a:hover::after {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  transition: transform 0.65s cubic-bezier(0.4, 0.2, 0.2, 1);
+  /* transition: transform 0.65s cubic-bezier(0.4, 0.2, 0.2, 1); */
   border-radius: 24px;
 }
 
@@ -664,7 +664,9 @@ header nav a:hover::after {
 }
 
 .flip-back {
-  transform: rotateY(180deg);
+  transform: rotateY(
+    180deg
+  ); /* 이 코드가 있어야 뒷면 글씨가 제대로 보입니다. */
   color: #fff;
   font-size: clamp(13px, 1.4vw, 16px);
   font-weight: 700;
@@ -739,9 +741,16 @@ header nav a:hover::after {
 }
 
 .cert-section .flip-check:checked + .flip-inner:hover {
-  transform: rotateY(180deg) translateY(-6px);
+  transform: rotateY(180deg);
+  filter: drop-shadow(
+    0 10px 15px rgba(0, 0, 0, 0.3)
+  ); /* 뒤집힌 상태에서도 안전하게 그림자 등으로 강조 */
 }
 
+/* GSAP이 스크롤 트리거로 클래스를 붙였을 때 뒤집히는 효과 */
+.cert-section .flip-card.flipped .flip-inner {
+  transform: rotateY(180deg);
+}
 /* ── Education ── */
 .education-section {
   display: flex;

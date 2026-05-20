@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>게시판</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wrap {
+        width: 600px;
+        margin: 50px auto;
+        border: 1px solid#ccc;
+        padding: 20px;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      form div {
+        margin-bottom: 15px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid#aaa;
+      }
+      textarea {
+        height: 130px;
+      }
+
+      button {
+        width: 100%;
+        background: green;
+        border: 0;
+        padding: 10px;
+        color: #fff;
+        cursor: pointer;
+      }
+      .msg.ok {
+        color: green;
+      }
+      .msg err {
+        color: red;
+      }
+      .msg {
+        margin-top: 15px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h2>상담신청</h2>
+      <form id="requestForm">
+        <div>
+          <label>이름</label>
+          <input type="text" id="name" />
+        </div>
+        <div>
+          <label>상담내용</label>
+          <textarea id="message" type="text"></textarea>
+        </div>
+        <button id="submitBtn" type="submit">제출하기</button>
+        <div id="feedback" class="msg">메시지</div>
+      </form>
+    </div>
+    <script src="board.js" type="module"></script>
+  </body>
+</html>
+<!-- 
+유효성 검사 : , 사용자가 입력창에 적은 데이터가 "진짜 쓸 수 있는 올바른 값인지" 전송하기 전에 미리 확인하는 과정
+-->
