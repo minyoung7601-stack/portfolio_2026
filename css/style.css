@@ -197,6 +197,7 @@ header nav a:hover::after {
   line-height: 1.7;
   color: var(--ink-soft);
   margin-bottom: 28px;
+  word-break: keep-all;
 }
 
 .landing-icons {
@@ -403,6 +404,7 @@ header nav a:hover::after {
   font-size: clamp(14px, 1.8vw, 17px);
   line-height: 1.8;
   color: var(--ink-soft);
+  word-break: keep-all;
 }
 
 /* Reading slider */
