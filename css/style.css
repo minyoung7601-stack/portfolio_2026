@@ -33,9 +33,9 @@ img {
   max-width: 100%;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
@@ -90,8 +90,18 @@ header h1 {
 header h1 img.logo-img {
   width: 36px;
   height: auto;
+  animation: swayFlower 2s ease-in-out infinite;
+  transform-origin: bottom center;
 }
-
+@keyframes swayFlower {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg); /* 오른쪽으로 15도 회전 */
+  }
+}
 header nav ul {
   display: flex;
   flex-wrap: wrap;
