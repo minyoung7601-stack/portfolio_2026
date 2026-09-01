@@ -1,0 +1,331 @@
+/* Landing / Intro */
+#landing.con.intro {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 20px 64px;
+  background: linear-gradient(135deg, #fff6e5 0%, #ffe8e2 42%, #eef2ff 100%);
+}
+
+#landing.con.intro .landing-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 920px;
+  width: 100%;
+  padding: 0 16px;
+}
+
+#landing.con.intro .intro-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.intro-decor {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.intro-word {
+  position: absolute;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.55);
+  white-space: nowrap;
+  user-select: none;
+}
+
+.intro-word--creative {
+  top: 12%;
+  left: 4%;
+  font-size: clamp(48px, 10vw, 140px);
+}
+
+.intro-word--web {
+  bottom: 10%;
+  left: 3%;
+  font-size: clamp(40px, 8vw, 110px);
+}
+
+.intro-word--dev {
+  bottom: 8%;
+  right: 2%;
+  font-size: clamp(40px, 8vw, 110px);
+}
+
+.intro-shape {
+  position: absolute;
+  border-radius: 18px;
+}
+
+.intro-shape--pink {
+  width: 88px;
+  height: 88px;
+  background: rgba(255, 176, 189, 0.45);
+  top: 22%;
+  right: 16%;
+  transform: rotate(12deg);
+}
+
+.intro-shape--yellow {
+  width: 72px;
+  height: 72px;
+  background: rgba(255, 224, 130, 0.5);
+  bottom: 28%;
+  left: 18%;
+  transform: rotate(-8deg);
+}
+
+.intro-shape--ring {
+  width: 120px;
+  height: 120px;
+  border: 10px solid rgba(255, 196, 150, 0.45);
+  border-radius: 50%;
+  top: 18%;
+  left: 28%;
+}
+
+.landing-card {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+#landing.con.intro .landing-card h2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+  font-size: clamp(28px, 4.6vw, 52px);
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.title-hanja {
+  font-size: clamp(22px, 4vw, 45px);
+  font-weight: 800;
+  color: #1f2937;
+}
+
+#landing.con.intro .landing-desc {
+  font-size: clamp(14px, 1.4vw, 17px);
+  color: #4b5563;
+  line-height: 1.85;
+  margin-bottom: 36px;
+  word-break: keep-all;
+}
+
+#landing.con.intro .landing-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+#landing.con.intro .icon-item {
+  min-width: 52px;
+  height: 52px;
+  padding: 0 10px;
+  background: #fff;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+  position: relative;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+#landing.con.intro .icon-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.14);
+}
+
+#landing.con.intro .icon-badge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #333;
+  background: transparent;
+  border: 0;
+  width: auto;
+  height: auto;
+}
+
+#landing.con.intro .icon-ko {
+  position: absolute;
+  bottom: -34px;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  font-size: 0.72rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s;
+  z-index: 20;
+  color: #333;
+  max-height: none;
+  overflow: visible;
+}
+
+#landing.con.intro .icon-item:hover .icon-ko {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+#landing.con.intro .icon-item.ps {
+  background: #e8f4ff;
+}
+
+#landing.con.intro .icon-item.ps .icon-badge {
+  color: #31a8ff;
+}
+
+#landing.con.intro .icon-item.ai {
+  background: #fff4e5;
+}
+
+#landing.con.intro .icon-item.ai .icon-badge {
+  color: #ff9a00;
+}
+
+#landing.con.intro .icon-item.pr {
+  background: #efefff;
+}
+
+#landing.con.intro .icon-item.pr .icon-badge {
+  color: #7a7aff;
+}
+
+#landing.con.intro .icon-item.ae {
+  background: #f6edff;
+}
+
+#landing.con.intro .icon-item.ae .icon-badge {
+  color: #c77dff;
+}
+
+#landing.con.intro .icon-item.figma {
+  background: #f3ebff;
+}
+
+#landing.con.intro .icon-item.figma .icon-badge {
+  color: #a259ff;
+}
+
+#landing.con.intro .icon-item.html5 {
+  background: #ffece8;
+}
+
+#landing.con.intro .icon-item.html5 .icon-badge {
+  color: #e44d26;
+}
+
+#landing.con.intro .icon-item.css3 {
+  background: #e8edff;
+}
+
+#landing.con.intro .icon-item.css3 .icon-badge {
+  color: #264de4;
+}
+
+#landing.con.intro .icon-item.jquery {
+  background: #e5f2fb;
+}
+
+#landing.con.intro .icon-item.jquery .icon-badge {
+  color: #0769ad;
+}
+
+#landing.con.intro .icon-item.gsap {
+  background: #f0fce0;
+}
+
+#landing.con.intro .icon-item.gsap .icon-badge {
+  color: #7ac200;
+}
+
+#landing.con.intro .icon-item.javascript {
+  background: #fffde8;
+}
+
+#landing.con.intro .icon-item.javascript .icon-badge {
+  color: #b59f00;
+}
+
+#landing.con.intro .icon-item.github {
+  background: #eceff3;
+}
+
+#landing.con.intro .icon-item.github .icon-badge {
+  color: #24292f;
+}
+
+#landing.con.intro .landing-cta {
+  display: inline-block;
+  padding: 16px 40px;
+  background: #4267b2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: clamp(13px, 1.2vw, 16px);
+  font-weight: 700;
+  box-shadow: 0 10px 28px rgba(66, 103, 178, 0.35);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+  margin-top: 8px;
+  animation: none;
+}
+
+#landing.con.intro .landing-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 34px rgba(66, 103, 178, 0.42);
+  background: #365899;
+}
+
+@media (max-width: 768px) {
+  .title-hanja {
+    display: block;
+    width: 100%;
+  }
+
+  .intro-word--creative,
+  .intro-word--web,
+  .intro-word--dev {
+    opacity: 0.7;
+  }
+}

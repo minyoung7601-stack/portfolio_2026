@@ -1,49 +1,62 @@
 ﻿<!doctype html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2026 MinYoung Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="wrap">
-      <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026 MinYoung Portfolio</title>
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/intro.css" />
+  <script src="js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="header-inner">
         <h1>
-          <a href="#landing" class="logo-link">
-            <img
-              src="img/free-animated-icon-flower-14463844.png"
-              alt=""
-              class="logo-img"
-            />
+          <a href="#landing" class="logo">
+            <img src="img/free-animated-icon-flower-14463844.png" alt="" class="logo-img" />
             <span>CREATIVE_DESIGN</span>
           </a>
         </h1>
-        <nav>
-          <ul>
+
+        <nav class="nav-container">
+          <ul class="nav_list">
             <li><a href="#about">ABOUT ME</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#illustration">Illustration</a></li>
-            <li><a href="#pro2">Project 01</a></li>
-            <li><a href="#pro3">02</a></li>
-            <li><a href="#pro4">03</a></li>
-            <li><a href="#pro5">04</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#certifications">CERTS</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#illustration">DESIGN</a></li>
+            <li><a href="#pro2">PROJECTS</a></li>
+            <li><a href="#pro5">TEM PROJECT</a></li>
           </ul>
         </nav>
-      </header>
 
-      <!-- INTRO -->
-      <section id="landing" class="con intro">
-        <video autoplay muted loop playsinline>
-          <source src="img/gradation.mp4" type="video/mp4" />
-        </video>
+        <a href="#contact" class="contact">CONTACT</a>
+
+        <button type="button" class="menu-toggle" aria-label="메뉴 열기">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- INTRO -->
+    <section id="landing" class="con intro">
+      <video class="intro-video" autoplay muted loop playsinline>
+        <source src="img/gradation.mp4" type="video/mp4" />
+      </video>
+      <div class="landing-content">
         <div class="landing-card">
-          <h2>온고지신(溫故知新)</h2>
+          <h2>온고지신<span class="title-hanja">(溫故知新)</span></h2>
           <p class="landing-desc">
             옛것에서 배운 지혜로 내일의 가치를 만드는것에<br />
-            즐거움을 갖고 있는 신입 웹디자인 & 퍼블리셔 지원자 김민영입니다.
+            즐거움을 갖고 있는 신입 웹디자인 &amp; 퍼블리셔 지원자
+            김민영입니다.
           </p>
           <div class="landing-icons">
             <div class="icon-item ps">
@@ -91,91 +104,90 @@
               <span class="icon-ko">깃허브</span>
             </div>
           </div>
-          <a href="#certifications" class="landing-cta"
-            >View my certifications</a
-          >
+          <a href="#certifications" class="landing-cta">View my certifications</a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- ABOUT ME -->
-      <section id="about" class="con about-section">
-        <div class="about-inner">
-          <div class="profile-row">
-            <figure class="profile-photo">
-              <img src="img/Mypicture.png" alt="김민영 프로필 사진" />
-            </figure>
-            <div class="profile-text">
-              <p class="slogan-label">Slogan &amp; Motto</p>
-              <h2 class="slogan-title">온고지신(溫故知新)</h2>
-              <p class="slogan-desc">
-                과거의 경험과 배움을 소중히 여기며, 그 안에서 얻은 통찰로 더
-                나은 디자인과 새로운 가능성을 만들어 가며, 끊임없는 학습과
-                성찰을 통해 성장하는 디자이너가 되겠습니다.
-              </p>
-            </div>
+    <!-- ABOUT ME -->
+    <section id="about" class="con about-section">
+      <div class="about-inner">
+        <div class="profile-row">
+          <figure class="profile-photo">
+            <img src="img/Mypicture.png" alt="김민영 프로필 사진" />
+          </figure>
+          <div class="profile-text">
+            <p class="slogan-label">Slogan &amp; Motto</p>
+            <h2 class="slogan-title">온고지신(溫故知新)</h2>
+            <p class="slogan-desc">
+              과거의 경험과 배움을 소중히 여기며, 그 안에서 얻은 통찰로 더
+              나은 디자인과 새로운 가능성을 만들어 가며, 끊임없는 학습과
+              성찰을 통해 성장하는 디자이너가 되겠습니다.
+            </p>
           </div>
+        </div>
 
-          <div class="reading-block">
-            <h3 class="reading-title">Reading Records</h3>
-            <div class="reading-slider">
-              <input type="radio" name="read-slide" id="read-1" checked />
-              <input type="radio" name="read-slide" id="read-2" />
-              <input type="radio" name="read-slide" id="read-3" />
-
-              <div class="reading-slides">
-                <article class="reading-slide">
+        <div class="reading-block">
+          <h3 class="reading-title">Reading Records</h3>
+          <div class="reading-slider">
+            <div class="reading-view">
+              <div class="slidewrap">
+                <article class="reading-slide" data-index="0">
                   <figure class="reading-cover">
                     <img src="img/read1.png" alt="독서 기록 1" />
                   </figure>
                   <div class="reading-content">
-                    <h4>박웅현 <책은 도끼다></h4>
+                    <h4>박웅현 &lt;책은 도끼다&gt;</h4>
                     <p class="reading-quote">
                       “가끔 왜 책을 읽느냐고, 왜 음악을 듣느냐고 누가 물을 때
-                      이런 즐거움 때문이라고 대답합니다. ”
+                      이런 즐거움 때문이라고 대답합니다.”
                     </p>
                     <p>
                       2017.12.03. 카카오스토리에 남긴 리뷰. 내가 책을 읽는
-                      이유와 같은 글이 이 책에 적혀 있어서 반가웠다.  아플 때
-                      진통제를 먹고, 피곤할 때 비타민을 꺼내 먹으면 힘이
+                      이유와 같은 글이 이 책에 적혀 있어서 반가웠다. 아플 때
+                      진통제를 먹고, 피곤할 때 비타민을 꺼내 먹으면 힘이
                       생기는것 같은 느낌 때문에...<br />
-                      - 책 속의 글 - 어떤 때는 삶의 위안이 되니까요. 그래서 힘들
-                      때는 진통제를 가지고 다니듯이 음악을 가지고 다녀요. 그만한
-                      진통제가 없는 것 같아요. p.73
+                      - 책 속의 글 - 어떤 때는 삶의 위안이 되니까요. 그래서
+                      힘들 때는 진통제를 가지고 다니듯이 음악을 가지고 다녀요.
+                      그만한 진통제가 없는 것 같아요. p.73
                     </p>
                   </div>
                 </article>
-                <article class="reading-slide">
+                <article class="reading-slide" data-index="1">
                   <figure class="reading-cover">
                     <img src="img/read2.png" alt="독서 기록 2" />
                   </figure>
                   <div class="reading-content">
-                    <h4><어쩌면 별들이 너의 슬픔을 가져갈지도 몰라> 중에서</h4>
+                    <h4>
+                      &lt;어쩌면 별들이 너의 슬픔을 가져갈지도 몰라&gt; 중에서
+                    </h4>
                     <p class="reading-quote">
                       “그 계집애가 지구보다 더 큰 질량으로 나를 끌어당긴다”
                     </p>
                     <p>
                       2017.01.19. 카카오스토리에 남긴 리뷰. 김용택의 꼭 한번
-                      필사하고 싶은시   <br />
-                      <농담>  - 이문재 : 문득 아름다운 것과 마주쳤을 때  지금
-                      곁에 있으면 얼마나 좋을까 하고  떠오르는 얼굴이 있으면
-                      그대는  사랑하고 있는 것이다.<br /> <사랑의 물리학> -
-                      김인육 : 질량의 크기는 부피와 비례하지 않는다. 제비꽃같이
-                      조그마한 그 계집애가 꽃잎같이 하는거리는 그 계집애가
-                      지구보다 더 큰 질량으로 나를 끌어당긴다, 순간, 나는 뉴턴의
-                      사과처럼 사정없이 그녀에게로 굴러 떨어졌다 쿵 소리를 내며,
-                      쿵쿵 소리를 내며 심장이 하늘에서 땅까지 아찔한 진자운동을
-                      계속하였다 첫사랑이었다.  
+                      필사하고 싶은시<br />
+                      &lt;농담&gt; - 이문재 : 문득 아름다운 것과 마주쳤을 때
+                      지금 곁에 있으면 얼마나 좋을까 하고 떠오르는 얼굴이
+                      있으면 그대는 사랑하고 있는 것이다.<br />
+                      &lt;사랑의 물리학&gt; - 김인육 : 질량의 크기는 부피와
+                      비례하지 않는다. 제비꽃같이 조그마한 그 계집애가
+                      꽃잎같이 하는거리는 그 계집애가 지구보다 더 큰 질량으로
+                      나를 끌어당긴다, 순간, 나는 뉴턴의 사과처럼 사정없이
+                      그녀에게로 굴러 떨어졌다 쿵 소리를 내며, 쿵쿵 소리를
+                      내며 심장이 하늘에서 땅까지 아찔한 진자운동을 계속하였다
+                      첫사랑이었다.
                     </p>
                   </div>
                 </article>
-                <article class="reading-slide">
+                <article class="reading-slide" data-index="2">
                   <figure class="reading-cover">
                     <img src="img/read3.png" alt="독서 기록 3" />
                   </figure>
                   <div class="reading-content">
                     <h4>
-                      알랭 드 보통 <낭만적 연애와 그 후의 일상(The Course of
-                      Love)> 
+                      알랭 드 보통 &lt;낭만적 연애와 그 후의 일상(The Course of
+                      Love)&gt;
                     </h4>
                     <p class="reading-quote">
                       “사랑은 우리의 당황스럽고 난처한 영혼에 대한 연인의
@@ -184,407 +196,337 @@
                     <p>
                       2016.11.05. 카카오스토리에 남긴 리뷰. 이 작가의 책 속의
                       글들은 하나하나 보석같다는 느낌이 든다.<br />
-                      언어의 연금술사 같다...  결혼생활이란 무엇인지 논리적으로
-                      심리학적으로 잘 풀어 쓴 책...<br />
+                      언어의 연금술사 같다... 결혼생활이란 무엇인지 논리적으로
+                      심리학적으로 잘 풀어 쓴 책...<br />
                       - 책 속의 글 - 결혼 : 자신이 누구인지 또는 상대방이
-                      누구인지를 아직 모르는 두 사람이 상상할 수 없고 조사하기를
-                      애써 생략해버린 미래에 자신을 결박하고서 기대에 부풀어
-                      벌이는 관대하고 무한히 친절한 도박.  p.65
+                      누구인지를 아직 모르는 두 사람이 상상할 수 없고
+                      조사하기를 애써 생략해버린 미래에 자신을 결박하고서
+                      기대에 부풀어 벌이는 관대하고 무한히 친절한 도박. p.65
                     </p>
                   </div>
                 </article>
               </div>
-
-              <div class="reading-controls">
-                <label
-                  for="read-1"
-                  class="read-arrow read-prev read-prev-1"
-                  aria-label="이전"
-                  >&#10094;</label
-                >
-                <label
-                  for="read-2"
-                  class="read-arrow read-prev read-prev-2"
-                  aria-label="이전"
-                  >&#10094;</label
-                >
-                <label
-                  for="read-3"
-                  class="read-arrow read-prev read-prev-3"
-                  aria-label="이전"
-                  >&#10094;</label
-                >
-                <div class="read-dots">
-                  <label for="read-1" aria-label="1번 슬라이드"></label>
-                  <label for="read-2" aria-label="2번 슬라이드"></label>
-                  <label for="read-3" aria-label="3번 슬라이드"></label>
-                </div>
-                <label
-                  for="read-2"
-                  class="read-arrow read-next read-next-1"
-                  aria-label="다음"
-                  >&#10095;</label
-                >
-                <label
-                  for="read-3"
-                  class="read-arrow read-next read-next-2"
-                  aria-label="다음"
-                  >&#10095;</label
-                >
-                <label
-                  for="read-1"
-                  class="read-arrow read-next read-next-3"
-                  aria-label="다음"
-                  >&#10095;</label
-                >
-              </div>
             </div>
-            <p class="reading-footer">
-              20년전부터 책 속의 울림을 카카오스토리에서 페이스북과 카카오톡의
-              프로필에 기록해 왔습니다.<br />
-              독서를 통해 얻은 인사이트를 디자인과 코딩에 연결하며, 더 공감 있는
-              웹사이트를 만들어 가고 싶습니다.
+
+            <div class="reading-controls">
+              <button type="button" class="read-arrow read-prev" aria-label="이전">
+                &#10094;
+              </button>
+              <div class="read-dots">
+                <button type="button" class="active" aria-label="1번 슬라이드"></button>
+                <button type="button" aria-label="2번 슬라이드"></button>
+                <button type="button" aria-label="3번 슬라이드"></button>
+              </div>
+              <button type="button" class="read-arrow read-next" aria-label="다음">
+                &#10095;
+              </button>
+              <button
+                type="button"
+                class="read-arrow read-pause"
+                aria-label="일시정지"
+                aria-pressed="false"
+              >
+                <span class="pause-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+          <p class="reading-footer">
+            20년전부터 책 속의 울림을 카카오스토리에서 페이스북과 카카오톡의
+            프로필에 기록해 왔습니다.<br />
+            독서를 통해 얻은 인사이트를 디자인과 코딩에 연결하며, 더 공감 있는
+            웹사이트를 만들어 가고 싶습니다.
+          </p>
+        </div>
+
+        <ul class="contact-row">
+          <li>
+            <span class="contact-icon" aria-hidden="true">📞</span>
+            <span>010-5220-1894</span>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">✉</span>
+            <span>nicelady76@kakao.com</span>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">🔗</span>
+            <span>https://minyoung7601-stack.github.io/portfolio_2026/</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="con cert-section">
+      <div class="cert-wrap">
+        <h2 class="cert-heading">
+          Certifications
+        </h2>
+        <div class="cert-grid">
+          <label class="flip-card back-red">
+            <input type="checkbox" class="flip-check" />
+            <span class="flip-inner">
+              <span class="flip-front">
+                <span class="cert-emoji-wrap emoji-red">
+                  <span class="cert-emoji">💻</span>
+                </span>
+                <span class="cert-ko">웹디자인 개발기능사</span>
+                <span class="cert-detail">2026.04.22 필기합격<br />2026.08.31 실기시험</span>
+              </span>
+              <span class="flip-back">Web Design Developer</span>
+            </span>
+          </label>
+          <label class="flip-card back-blue">
+            <input type="checkbox" class="flip-check" />
+            <span class="flip-inner">
+              <span class="flip-front">
+                <span class="cert-emoji-wrap emoji-blue">
+                  <span class="cert-emoji">🎨</span>
+                </span>
+                <span class="cert-ko">포토샵 1급</span>
+                <span class="cert-detail">한국생산성본부(KCP)<br />2026.03.20 취득</span>
+              </span>
+              <span class="flip-back">GTQ Photoshop Level 1</span>
+            </span>
+          </label>
+          <label class="flip-card back-yellow">
+            <input type="checkbox" class="flip-check" />
+            <span class="flip-inner">
+              <span class="flip-front">
+                <span class="cert-emoji-wrap emoji-yellow">
+                  <span class="cert-emoji">🖥️</span>
+                </span>
+                <span class="cert-ko">컴퓨터활용능력 2급</span>
+                <span class="cert-detail">대한상공회의소<br />2003.08.08 취득</span>
+              </span>
+              <span class="flip-back">Computer Literacy (Excel) Level 2</span>
+            </span>
+          </label>
+          <label class="flip-card back-navy">
+            <input type="checkbox" class="flip-check" />
+            <span class="flip-inner">
+              <span class="flip-front">
+                <span class="cert-emoji-wrap emoji-gray">
+                  <span class="cert-emoji">📄</span>
+                </span>
+                <span class="cert-ko">워드프로세서 2급</span>
+                <span class="cert-detail">대한상공회의소<br />2000.08.05 취득</span>
+              </span>
+              <span class="flip-back">Word Processor Level 2</span>
+            </span>
+          </label>
+          <label class="flip-card back-coral">
+            <input type="checkbox" class="flip-check" />
+            <span class="flip-inner">
+              <span class="flip-front">
+                <span class="cert-emoji-wrap emoji-pink">
+                  <span class="cert-emoji">🏠</span>
+                </span>
+                <span class="cert-ko">공인중개사 자격증</span>
+                <span class="cert-detail">국토교통부<br />2006.12.08 취득</span>
+              </span>
+              <span class="flip-back">Certified Real Estate Agent</span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="con education-section">
+      <h2 class="edu-heading">Education</h2>
+      <div class="edu-box">
+        <div class="edu-columns">
+          <div class="edu-left">
+            <h3 class="edu-subtitle">Education Institution</h3>
+            <p class="edu-school">MBC 아카데미 컴퓨터 교육센터</p>
+            <p class="edu-period">2025.12.31 ~ 2026.05.21 (수료 예정)</p>
+            <div class="edu-program-box">
+              <span class="edu-program-label">Program Name</span>
+              <p class="edu-program-text">
+                (디지털 디자인) 영상(Premiere Pro, After Effects)을 활용한
+                UI/UX 웹디자인 전문가 양성 과정
+              </p>
+            </div>
+          </div>
+          <div class="edu-divider" aria-hidden="true"></div>
+          <div class="edu-right">
+            <h3 class="edu-curriculum-title">Detailed Curriculum</h3>
+            <ul class="edu-curriculum">
+              <li>포토샵, 일러스트레이터</li>
+              <li>Figma (UI/UX Design)</li>
+              <li>영상 (Premiere Pro, After Effects)</li>
+              <li>HTML5, CSS3</li>
+              <li>jQuery, GSAP, JavaScript</li>
+              <li>FileZilla, GitHub</li>
+            </ul>
+          </div>
+        </div>
+        <p class="edu-note">
+          <span class="edu-note-icon" aria-hidden="true">↗</span>
+          해당 과정을 이수하는 동안 단 한 차례의 지각이나 결석 없이 성실히
+          임했으며, 자격증 시험 일정 또한 주말로 조정하며 학습 흐름을 놓치지
+          않기 위해 최선을 다했습니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- Illustration -->
+    <section id="illustration" class="con illustration-section">
+      <div class="illustration-inner">
+        <h2 class="illus-title">
+          <span class="illus-highlight">Illustration</span> Design
+        </h2>
+        <p class="illus-sub">Adobe Illustrator Creative Works</p>
+        <div class="illus-grid">
+          <article class="illus-card">
+            <figure class="illus-thumb">
+              <img src="img/illustrator1.png" alt="" />
+            </figure>
+          </article>
+          <article class="illus-card">
+            <figure class="illus-thumb">
+              <img src="img/illustrator2.png" alt="" />
+            </figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project 01 -->
+    <section id="pro2" class="con project-section project-embed-section">
+      <div class="project-inner project-inner--embed">
+        <p class="project-label">Project 01</p>
+        <h2 class="section-title">숫자 맞추기 게임</h2>
+        <p class="project-desc">
+          JavaScript로 구현한 인터랙티브 숫자 추측 게임입니다. 사용자 피드백과
+          점수 시스템을 적용했습니다.
+        </p>
+        <div class="project-embed">
+          <iframe src="숫자게임만들기2/index.html" title="숫자 맞추기 게임" loading="lazy"></iframe>
+        </div>
+        <a href="숫자게임만들기2/index.html" class="project-link" target="_blank" rel="noopener noreferrer">프로젝트 보기</a>
+      </div>
+    </section>
+
+    <!-- Project 02 -->
+    <section id="pro3" class="con project-section project-embed-section">
+      <div class="project-inner project-inner--embed">
+        <p class="project-label">Project 02</p>
+        <h2 class="section-title">날씨예보 웹사이트</h2>
+        <p class="project-desc">
+          OpenWeather API를 활용한 반응형 날씨 정보 페이지입니다. 도시 검색과
+          실시간 데이터 표시에 중점을 두었습니다.
+        </p>
+        <div class="project-embed">
+          <iframe src="JavaScript-weather/index.html" title="날씨예보 웹사이트" loading="lazy"></iframe>
+        </div>
+        <a href="JavaScript-weather/index.html" class="project-link" target="_blank" rel="noopener noreferrer">프로젝트
+          보기</a>
+      </div>
+    </section>
+
+    <!-- Project 03 -->
+    <section id="pro4" class="con project-section project-embed-section">
+      <div class="project-inner project-inner--embed">
+        <p class="project-label">Project 03</p>
+        <h2 class="section-title">영화 웹사이트</h2>
+        <p class="project-desc">
+          영화 정보 검색과 상세 페이지를 제공하는 미디어 웹사이트입니다.
+        </p>
+        <div class="project-embed">
+          <iframe src="movie3/index.html" title="영화 웹사이트" loading="lazy"></iframe>
+        </div>
+        <a href="movie3/index.html" class="project-link" target="_blank" rel="noopener noreferrer">프로젝트 보기</a>
+      </div>
+    </section>
+
+    <!-- Team Project -->
+    <section id="pro5" class="con project-section alt">
+      <div class="project-inner wide">
+        <h2 class="section-title">Team & Personal Project</h2>
+        <div class="team-grid">
+          <figure>
+            <a href="https://turo01315.dothome.co.kr/main/" target="_blank"
+              style="display: block; text-decoration: none; color: inherit">
+              <div class="box">
+                <img src="img/screen.png" alt="목업 프레임" />
+                <div class="folio" style="
+                      background-image: url(&quot;img/mockup_tp_main.png&quot;);
+                    "></div>
+              </div>
+
+              <figcaption style="margin-top: 10px">
+                Team Project 01 (view website)
+              </figcaption>
+            </a>
+          </figure>
+
+          <figure>
+            <a href="https://minyoung7601-stack.github.io/wedding/" target="_blank"
+              style="display: block; text-decoration: none; color: inherit">
+              <div class="box">
+                <img src="img/screen.png" alt="목업 프레임" />
+                <div class="folio" style="
+                      background-image: url(&quot;img/mockup_tp_wedding.png&quot;);
+                    "></div>
+              </div>
+
+              <figcaption>Team Project 2 (view website)</figcaption>
+            </a>
+          </figure>
+
+          <figure>
+            <a href="https://minyoung7601-stack.github.io/social/" target="_blank"
+              style="display: block; text-decoration: none; color: inherit">
+              <div class="box">
+                <img src="img/screen.png" alt="목업 프레임" />
+                <div class="folio" style="
+                      background-image: url(&quot;img/mockup_social.png&quot;);
+                    "></div>
+              </div>
+
+              <figcaption>
+                Personal Project - social AI (view website)
+              </figcaption>
+            </a>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="business_card">
+      <div class="contact-inner">
+        <div class="business_card-row">
+          <figure class="business_card-photo">
+            <img src="img/business_card.png" alt="김민영 명함" />
+          </figure>
+          <div class="business_card-text">
+            <p class="business_card-label">
+              함께 일할 기회를 기다리고 있습니다
+            </p>
+            <h2 class="business_card-title">Contact</h2>
+            <p class="business_card-desc">
+              과거의 경험과 배움을 소중히 여기며, 그 안에서 얻은 통찰로 더
+              나은 디자인과 새로운 가능성을 만들어 가며, 끊임없는 학습과
+              성찰을 통해 성장하는 디자이너가 되겠습니다.
             </p>
           </div>
-
-          <ul class="contact-row">
-            <li>
-              <span class="contact-icon" aria-hidden="true">📞</span>
-              <span>010-5220-1894</span>
-            </li>
-            <li>
-              <span class="contact-icon" aria-hidden="true">✉</span>
-              <span>nicelady76@kakao.com</span>
-            </li>
-            <li>
-              <span class="contact-icon" aria-hidden="true">🔗</span>
-              <span>https://minyoung7601-stack.github.io/portfolio_2026/</span>
-            </li>
-          </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Certifications -->
-      <section id="certifications" class="con cert-section">
-        <div class="cert-wrap">
-          <h2 class="cert-heading">
-            <span class="cert-diamond" aria-hidden="true">💎</span>
-            Certifications
-          </h2>
-          <div class="cert-grid">
-            <label class="flip-card back-red">
-              <input type="checkbox" class="flip-check" />
-              <span class="flip-inner">
-                <span class="flip-front">
-                  <span class="cert-emoji-wrap emoji-red">
-                    <span class="cert-emoji">💻</span>
-                  </span>
-                  <span class="cert-ko">웹디자인 개발기능사</span>
-                  <span class="cert-detail"
-                    >2026.04.22 필기합격<br />2026.06.04 실기시험</span
-                  >
-                </span>
-                <span class="flip-back">Craftsman Web Design Developer</span>
-              </span>
-            </label>
-            <label class="flip-card back-blue">
-              <input type="checkbox" class="flip-check" />
-              <span class="flip-inner">
-                <span class="flip-front">
-                  <span class="cert-emoji-wrap emoji-blue">
-                    <span class="cert-emoji">🎨</span>
-                  </span>
-                  <span class="cert-ko">포토샵 1급</span>
-                  <span class="cert-detail"
-                    >한국생산성본부(KCP)<br />2026.03.20 취득</span
-                  >
-                </span>
-                <span class="flip-back">GTQ (Photoshop)<br> Level 1</span>
-              </span>
-            </label>
-            <label class="flip-card back-yellow">
-              <input type="checkbox" class="flip-check" />
-              <span class="flip-inner">
-                <span class="flip-front">
-                  <span class="cert-emoji-wrap emoji-yellow">
-                    <span class="cert-emoji">🖥️</span>
-                  </span>
-                  <span class="cert-ko">컴퓨터활용능력 2급</span>
-                  <span class="cert-detail"
-                    >대한상공회의소<br />2003.08.08 취득</span
-                  >
-                </span>
-                <span class="flip-back">Computer Literacy (Excel) Level 2</span>
-              </span>
-            </label>
-            <label class="flip-card back-navy">
-              <input type="checkbox" class="flip-check" />
-              <span class="flip-inner">
-                <span class="flip-front">
-                  <span class="cert-emoji-wrap emoji-gray">
-                    <span class="cert-emoji">📄</span>
-                  </span>
-                  <span class="cert-ko">워드프로세서 2급</span>
-                  <span class="cert-detail"
-                    >대한상공회의소<br />2000.08.05 취득</span
-                  >
-                </span>
-                <span class="flip-back">Word Processor<br> Level 2</span>
-              </span>
-            </label>
-            <label class="flip-card back-coral">
-              <input type="checkbox" class="flip-check" />
-              <span class="flip-inner">
-                <span class="flip-front">
-                  <span class="cert-emoji-wrap emoji-pink">
-                    <span class="cert-emoji">🏠</span>
-                  </span>
-                  <span class="cert-ko">공인중개사 자격증</span>
-                  <span class="cert-detail"
-                    >국토교통부<br />2006.12.08 취득</span
-                  >
-                </span>
-                <span class="flip-back">Certified Real Estate Agent</span>
-              </span>
-            </label>
-          </div>
-        </div>
-      </section>
+    <footer class="site-footer">
+      <p>© 2026 Kim MinYoung · CREATIVE_DESIGN Portfolio</p>
+    </footer>
+  </div>
 
-      <!-- Education -->
-      <section id="education" class="con education-section">
-        <h2 class="edu-heading">Education</h2>
-        <div class="edu-box">
-          <div class="edu-columns">
-            <div class="edu-left">
-              <h3 class="edu-subtitle">Education Institution</h3>
-              <p class="edu-school">MBC 아카데미 컴퓨터 교육센터</p>
-              <p class="edu-period">2025.12.31 ~ 2026.05.21 (수료 예정)</p>
-              <div class="edu-program-box">
-                <span class="edu-program-label">Program Name</span>
-                <p class="edu-program-text">
-                  (디지털 디자인) 영상(Premiere Pro, After Effects)을 활용한
-                  UI/UX 웹디자인 전문가 양성 과정
-                </p>
-              </div>
-            </div>
-            <div class="edu-divider" aria-hidden="true"></div>
-            <div class="edu-right">
-              <h3 class="edu-curriculum-title">Detailed Curriculum</h3>
-              <ul class="edu-curriculum">
-                <li>포토샵, 일러스트레이터</li>
-                <li>Figma (UI/UX Design)</li>
-                <li>영상 (Premiere Pro, After Effects)</li>
-                <li>HTML5, CSS3</li>
-                <li>jQuery, GSAP, JavaScript</li>
-                <li>FileZilla, GitHub</li>
-              </ul>
-            </div>
-          </div>
-          <p class="edu-note">
-            <span class="edu-note-icon" aria-hidden="true">↗</span>
-            해당 과정을 이수하는 동안 단 한 차례의 지각이나 결석 없이 성실히
-            임했으며, 자격증 시험 일정 또한 주말로 조정하며 학습 흐름을 놓치지
-            않기 위해 최선을 다했습니다.
-          </p>
-        </div>
-      </section>
-
-      <!-- Illustration -->
-      <section id="illustration" class="con illustration-section">
-        <div class="illustration-inner">
-          <h2 class="illus-title">
-            <span class="illus-highlight">Illustration</span> Design
-          </h2>
-          <p class="illus-sub">Adobe Illustrator Creative Works</p>
-          <div class="illus-grid">
-            <article class="illus-card">
-              <figure class="illus-thumb">
-                <img src="img/illustrator1.png" alt="" />
-              </figure>
-            </article>
-            <article class="illus-card">
-              <figure class="illus-thumb">
-                <img src="img/illustrator2.png" alt="" />
-              </figure>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Project 01 -->
-      <section id="pro2" class="con project-section project-embed-section">
-        <div class="project-inner project-inner--embed">
-          <p class="project-label">Project 01</p>
-          <h2 class="section-title">JavaScript로 구현한 인터랙티브 숫자 추측 게임</h2>
-          <div class="project-embed">
-            <iframe
-              src="숫자게임만들기2/index.html"
-              title="숫자 맞추기 게임"
-              loading="lazy"
-            ></iframe>
-          </div>
-          <a
-            href="숫자게임만들기2/index.html"
-            class="project-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            >프로젝트 보기</a
-          >
-        </div>
-      </section>
-
-      <!-- Project 02 -->
-      <section id="pro3" class="con project-section project-embed-section">
-        <div class="project-inner project-inner--embed">
-          <p class="project-label">Project 02</p>
-          <h2 class="section-title">OpenWeather API를 활용한 반응형 날씨정보 페이지</h2>
-          <div class="project-embed">
-            <iframe
-              src="JavaScript-weather/index.html"
-              title="날씨예보 웹사이트"
-              loading="lazy"
-            ></iframe>
-          </div>
-          <a
-            href="JavaScript-weather/index.html"
-            class="project-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            >프로젝트 보기</a
-          >
-        </div>
-      </section>
-
-      <!-- Project 03 -->
-      <section id="pro4" class="con project-section project-embed-section">
-        <div class="project-inner project-inner--embed">
-          <p class="project-label">Project 03</p>
-          <h2 class="section-title">영화 웹사이트</h2>
-          <p class="project-desc">
-            영화 정보 검색과 상세 페이지를 제공하는 미디어 웹사이트입니다.
-          </p>
-          <div class="project-embed">
-            <iframe
-              src="movie3/index.html"
-              title="영화 웹사이트"
-              loading="lazy"
-            ></iframe>
-          </div>
-          <a
-            href="movie3/index.html"
-            class="project-link"
-            target="_blank"
-            rel="noopener noreferrer"
-            >프로젝트 보기</a
-          >
-        </div>
-      </section>
-
-      <!-- Team Project -->
-      <section id="pro5" class="con project-section alt">
-        <div class="project-inner wide">
-          <h2 class="section-title">Team & Personal Project</h2>
-          <div class="team-grid">
-            <figure>
-              <a
-                href="https://turo01315.dothome.co.kr/main/"
-                target="_blank"
-                style="display: block; text-decoration: none; color: inherit"
-              >
-                <div class="box">
-                  <img src="img/screen.png" alt="목업 프레임" />
-                  <div
-                    class="folio"
-                    style="
-                      background-image: url(&quot;img/mockup_tp_main.png&quot;);
-                    "
-                  ></div>
-                </div>
-
-                <figcaption style="margin-top: 10px">
-                  Team Project 01 (view website)
-                </figcaption>
-              </a>
-            </figure>
-
-            <figure>
-              <a
-                href="https://minyoung7601-stack.github.io/wedding/"
-                target="_blank"
-                style="display: block; text-decoration: none; color: inherit"
-              >
-                <div class="box">
-                  <img src="img/screen.png" alt="목업 프레임" />
-                  <div
-                    class="folio"
-                    style="
-                      background-image: url(&quot;img/mockup_tp_wedding.png&quot;);
-                    "
-                  ></div>
-                </div>
-
-                <figcaption>Team Project 2 (view website)</figcaption>
-              </a>
-            </figure>
-
-            <figure>
-              <a
-                href="https://minyoung7601-stack.github.io/social/"
-                target="_blank"
-                style="display: block; text-decoration: none; color: inherit"
-              >
-                <div class="box">
-                  <img src="img/screen.png" alt="목업 프레임" />
-                  <div
-                    class="folio"
-                    style="
-                      background-image: url(&quot;img/mockup_social.png&quot;);
-                    "
-                  ></div>
-                </div>
-
-                <figcaption>
-                  Personal Project - social AI (view website)
-                </figcaption>
-              </a>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact" class="business_card">
-        <div class="contact-inner">
-          <div class="business_card-row">
-            <figure class="business_card-photo">
-              <img src="img/business_card.png" alt="김민영 명함" />
-            </figure>
-            <div class="business_card-text">
-              <p class="business_card-label">
-                함께 일할 기회를 기다리고 있습니다
-              </p>
-              <h2 class="business_card-title">Contact</h2>
-              <p class="business_card-desc">
-                과거의 경험과 배움을 소중히 여기며, 그 안에서 얻은 통찰로 더
-                나은 디자인과 새로운 가능성을 만들어 가며, 끊임없는 학습과
-                성찰을 통해 성장하는 디자이너가 되겠습니다.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer class="site-footer">
-        <p>© 2026 Kim MinYoung · CREATIVE_DESIGN Portfolio</p>
-      </footer>
-    </div>
-  </body>
-  <script src="js/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-
   <script src="js/gsap.js"></script>
-  <script src="js/board.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/intro.js"></script>
+</body>
+
 </html>
