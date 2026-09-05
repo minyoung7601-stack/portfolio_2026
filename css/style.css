@@ -1084,31 +1084,6 @@ html {
   color: #ff0000;
 }
 
-/* 모바일 반응형 처리 */
-@media (max-width: 768px) {
-  .business_card-row {
-    grid-template-columns: 1fr;
-    /* 모바일에서는 1열로 세로 정렬 */
-  }
-
-  .business_card-contacts li a {
-    font-size: 14px;
-    justify-content: center;
-    /* 모바일 시 중앙 정렬 */
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 .business_card-photo {
   border-radius: var(--radius-lg);
@@ -1273,5 +1248,31 @@ html {
     width: 100%;
     text-align: center;
     /* 모바일에서는 가운데 정렬이 깔끔합니다 */
+  }
+}
+
+/* 모바일 반응형 처리 */
+@media (max-width: 768px) {
+  .business_card-row {
+    grid-template-columns: 1fr;
+    /* 모바일에서는 1열로 세로 정렬 */
+  }
+
+  .business_card-contacts li a {
+    font-size: 14px;
+    justify-content: center;
+    /* 모바일 시 중앙 정렬 */
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
