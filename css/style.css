@@ -291,6 +291,13 @@ html {
   text-align: center;
 }
 
+/* 유튜브 아이콘 기본 스타일 */
+.youtube-icon {
+  font-size: 18px;
+  color: #FF0000;
+  /* 공식 유튜브 레드 컬러 (원치 않으시면 inherit이나 원하는 색으로 변경 가능) */
+}
+
 /* PC: 슬라이드 높이 고정 (컨트롤이 위아래로 움직이지 않게) */
 @media (min-width: 1024px) {
   .reading-view {
@@ -1025,6 +1032,72 @@ html {
   animation: fade-in 0.8s ease both;
 }
 
+/* Contact 섹션 내 연락처 리스트 스타일 */
+.business_card-desc {
+  margin-bottom: 24px;
+  /* 기존 소개글과 연락처 사이 간격 확보 */
+}
+
+.business_card-contacts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.business_card-contacts li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: var(--radius-md, 8px);
+  background: rgba(255, 255, 255, 0.6);
+  /* 은은한 흰색 카드 느낌 배경 */
+  transition: all 0.25s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* 마우스 호버 효과 */
+.business_card-contacts li a:hover {
+  background: #ffffff;
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  color: var(--blue, #2563eb);
+}
+
+/* 아이콘 기본 스타일 */
+.contact-ico {
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+  color: var(--blue, #2563eb);
+}
+
+/* 유튜브 아이콘 포인트 컬러 */
+.contact-ico.youtube {
+  color: #ff0000;
+}
+
+/* 모바일 반응형 처리 */
+@media (max-width: 768px) {
+  .business_card-row {
+    grid-template-columns: 1fr;
+    /* 모바일에서는 1열로 세로 정렬 */
+  }
+
+  .business_card-contacts li a {
+    font-size: 14px;
+    justify-content: center;
+    /* 모바일 시 중앙 정렬 */
+  }
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -1070,6 +1143,7 @@ html {
   line-height: 1.2;
 }
 
+
 /* ── Responsive ── */
 @media (max-width: 1024px) {
   .cert-section .cert-grid {
@@ -1088,10 +1162,20 @@ html {
     margin: 0 auto;
   }
 
-  .reading-view,
+  .reading-view {
+    height: 480px;
+    /* 화면 콘텐츠 양에 맞춰조정 */
+  }
+
   .slidewrap,
   .reading-slide {
-    height: auto;
+    height: 100%;
+  }
+
+  .reading-content {
+    min-height: 0;
+    overflow-y: auto;
+    /* 내용이 길어지면 슬라이드 안에서 스크롤 생성 */
   }
 
   .reading-slide {

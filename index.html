@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/header.css" />
   <link rel="stylesheet" href="css/intro.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script src="js/jquery-3.7.1.min.js"></script>
 </head>
 
@@ -31,7 +32,6 @@
             <li><a href="#education">EDUCATION</a></li>
             <li><a href="#illustration">DESIGN</a></li>
             <li><a href="#pro2">PROJECTS</a></li>
-            <li><a href="#pro5">TEM PROJECT</a></li>
           </ul>
         </nav>
 
@@ -52,11 +52,10 @@
       </video>
       <div class="landing-content">
         <div class="landing-card">
-          <h2>온고지신<span class="title-hanja">(溫故知新)</span></h2>
+          <h2>웹디자인 &amp; 웹퍼블리셔 지원자<span class="title-hanja">김민영입니다.</span></h2>
           <p class="landing-desc">
-            옛것에서 배운 지혜로 내일의 가치를 만드는것에<br />
-            즐거움을 갖고 있는 신입 웹디자인 &amp; 퍼블리셔 지원자
-            김민영입니다.
+            "배움의 통찰로 감각적인 웹을 구현하고 HTML/CSS, JavaScript, GSAP 기반의 인터랙티브 웹 구현부터<br>Figma/Adobe 툴을 활용한 UI/UX 디자인까지 수행합니다."
+
           </p>
           <div class="landing-icons">
             <div class="icon-item ps">
@@ -104,7 +103,7 @@
               <span class="icon-ko">깃허브</span>
             </div>
           </div>
-          <a href="#certifications" class="landing-cta">View my certifications</a>
+          <a href="#pro2" class="landing-cta">View my Projects</a>
         </div>
       </div>
     </section>
@@ -243,8 +242,16 @@
             <span>nicelady76@kakao.com</span>
           </li>
           <li>
-            <span class="contact-icon" aria-hidden="true">🔗</span>
-            <span>https://minyoung7601-stack.github.io/portfolio_2026/</span>
+            <a href="https://minyoung7601-stack.github.io/portfolio_2026/" target="_blank" class="footer-item">
+              <span class="contact-icon" aria-hidden="true">🔗</span>
+              <span>Portfolio Github Site</span>
+            </a>
+          </li>
+          <li><!-- 푸터 영역에 개인유튜브채널 추가 -->
+            <a href="https://www.youtube.com/@레벨업AI탐구일기" target="_blank" class="footer-item">
+              <i class="fa-brands fa-youtube youtube-icon"></i>
+              <span>www.youtube.com/@레벨업AI탐구일기</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -390,11 +397,10 @@
     <!-- Project 01 -->
     <section id="pro2" class="con project-section project-embed-section">
       <div class="project-inner project-inner--embed">
-        <p class="project-label">Project 01</p>
+        <p class="project-label">Project 01 [개인]</p>
         <h2 class="section-title">숫자 맞추기 게임</h2>
         <p class="project-desc">
-          JavaScript로 구현한 인터랙티브 숫자 추측 게임입니다. 사용자 피드백과
-          점수 시스템을 적용했습니다.
+          JavaScript의 조건문 및 상태 관리를 활용하여 실시간 피드백과 점수 시스템을 갖춘 인터랙티브 숫자 추측 게임입니다.
         </p>
         <div class="project-embed">
           <iframe src="숫자게임만들기2/index.html" title="숫자 맞추기 게임" loading="lazy"></iframe>
@@ -406,7 +412,7 @@
     <!-- Project 02 -->
     <section id="pro3" class="con project-section project-embed-section">
       <div class="project-inner project-inner--embed">
-        <p class="project-label">Project 02</p>
+        <p class="project-label">Project 02 [개인]</p>
         <h2 class="section-title">날씨예보 웹사이트</h2>
         <p class="project-desc">
           OpenWeather API를 활용한 반응형 날씨 정보 페이지입니다. 도시 검색과
@@ -423,10 +429,10 @@
     <!-- Project 03 -->
     <section id="pro4" class="con project-section project-embed-section">
       <div class="project-inner project-inner--embed">
-        <p class="project-label">Project 03</p>
+        <p class="project-label">Project 03 [개인]</p>
         <h2 class="section-title">영화 웹사이트</h2>
         <p class="project-desc">
-          영화 정보 검색과 상세 페이지를 제공하는 미디어 웹사이트입니다.
+          TMDB API(또는 사용한 API)를 활용하여 영화 정보 검색 및 상세페이지를 제공하는 미디어 웹사이트입니다.
         </p>
         <div class="project-embed">
           <iframe src="movie3/index.html" title="영화 웹사이트" loading="lazy"></iframe>
@@ -438,7 +444,7 @@
     <!-- Team Project -->
     <section id="pro5" class="con project-section alt">
       <div class="project-inner wide">
-        <h2 class="section-title">Team & Personal Project</h2>
+        <h2 class="section-title">Team & Personal Websites<br>(팀 및 개인 웹사이트 구축 프로젝트)</h2>
         <div class="team-grid">
           <figure>
             <a href="https://turo01315.dothome.co.kr/main/" target="_blank"
@@ -451,7 +457,7 @@
               </div>
 
               <figcaption style="margin-top: 10px">
-                Team Project 01 (view website)
+                Team Project - Full Site (↗ view website)
               </figcaption>
             </a>
           </figure>
@@ -466,7 +472,7 @@
                     "></div>
               </div>
 
-              <figcaption>Team Project 2 (view website)</figcaption>
+              <figcaption>Team Project - My Part (↗ view website)</figcaption>
             </a>
           </figure>
 
@@ -481,7 +487,7 @@
               </div>
 
               <figcaption>
-                Personal Project - social AI (view website)
+                Personal Project - Full Design & Dev (↗ view )
               </figcaption>
             </a>
           </figure>
@@ -506,13 +512,44 @@
               나은 디자인과 새로운 가능성을 만들어 가며, 끊임없는 학습과
               성찰을 통해 성장하는 디자이너가 되겠습니다.
             </p>
+            <!-- 💡 Contact 섹션 내부 연락처 목록 추가 -->
+            <ul class="business_card-contacts">
+              <li>
+                <a href="tel:010-5220-1894">
+                  <i class="fa-solid fa-phone contact-ico"></i>
+                  <span>010-5220-1894</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:nicelady76@kakao.com">
+                  <i class="fa-solid fa-envelope contact-ico"></i>
+                  <span>nicelady76@kakao.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://minyoung7601-stack.github.io/portfolio_2026/" target="_blank">
+                  <i class="fa-solid fa-globe contact-ico"></i>
+                  <span>Portfolio Github Site</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@레벨업AI탐구일기" target="_blank">
+                  <i class="fa-brands fa-youtube contact-ico youtube"></i>
+                  <span>@레벨업AI탐구일기</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+
+
     </section>
+
 
     <footer class="site-footer">
       <p>© 2026 Kim MinYoung · CREATIVE_DESIGN Portfolio</p>
+
     </footer>
   </div>
 
