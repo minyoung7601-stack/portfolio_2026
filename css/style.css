@@ -42,9 +42,23 @@ body {
   overflow-x: hidden;
 }
 
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
 html {
   scroll-behavior: smooth;
 }
+
 
 .con {
   min-height: 100vh;
