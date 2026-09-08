@@ -62,6 +62,20 @@ html {
   display: none;
 }
 
+/* 768px 이하 모바일 반응형 처리 */
+@media (max-width: 768px) {
+
+  /* 기존 헤더 우측 CONTACT 버튼 숨기기 */
+  header .contact {
+    display: none;
+  }
+
+  /* 모바일 햄버거 메뉴 내부의 CONTACT 보이기 */
+  .nav_list .mobile-only {
+    display: block;
+  }
+}
+
 .con {
   min-height: 100vh;
   width: 100%;
