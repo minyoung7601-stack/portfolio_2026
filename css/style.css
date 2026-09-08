@@ -57,6 +57,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* PC 기본: 모바일 전용 메뉴 항목 숨김 */
+.nav_list .mobile-only {
+  display: none;
+}
+
 .con {
   min-height: 100vh;
   width: 100%;
