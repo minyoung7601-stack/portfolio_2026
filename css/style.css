@@ -76,6 +76,31 @@ html {
   }
 }
 
+/* 기본 상태에서는 텍스트 숨김 */
+.landing-icons .icon-item .icon-ko {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* 실제 마우스 호버가 가능한 PC 환경에서만 작동 */
+@media (hover: hover) and (pointer: fine) {
+  .landing-icons .icon-item:hover .icon-ko {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* 모바일 기기에서는 호버 시에도 텍스트가 뜨지 않음 */
+  .landing-icons .icon-item:hover .icon-ko {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+}
+
 .con {
   min-height: 100vh;
   width: 100%;
